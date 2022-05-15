@@ -2,23 +2,21 @@
 
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:t_fashion/AddLocation/AddLocation.dart';
-import 'package:t_fashion/Cart/CartRoute.dart';
-import 'package:t_fashion/confirmPassword/ConfirmPasseord.dart';
-import 'package:t_fashion/Favorite/FavoriteRoute.dart';
-import 'package:t_fashion/Invoice/InvoiceRoute.dart';
-import 'package:t_fashion/Login/LoginRoute.dart';
-import 'package:t_fashion/Offers/OffersRoute.dart';
-import 'package:t_fashion/ProductDetails/ProductDetails.dart';
-import 'package:t_fashion/restorePassword/ResstorePassword.dart';
-import 'package:t_fashion/Settings/SettingsRoute.dart';
-import 'package:t_fashion/Signup/SingupRoute.dart';
-import 'package:t_fashion/Splash/BasicSplashRoute.dart';
-import 'package:t_fashion/Invoice/InvoiceRoute.dart';
-
-import 'Others/Constants.dart';
-import 'Home/HomeRoute.dart';
-import 'SavedLocations/SavedLocationRoute.dart';
+import 'package:t_fashion/features/users/presentation/pages/SingupRoute.dart';
+import 'core/others/Constants.dart';
+import 'features/AddLocation/presentation/pages/AddLocation.dart';
+import 'features/Favorite/presentation/pages/FavoriteRoute.dart';
+import 'features/Home/presentation/pages/HomeRoute.dart';
+import 'features/Invoice/presentation/pages/InvoiceRoute.dart';
+import 'features/Offers/presentation/pages/OffersRoute.dart';
+import 'features/ProductDetails/presentation/pages/ProductDetails.dart';
+import 'features/SavedLocations/presentation/pages/SavedLocationRoute.dart';
+import 'features/Settings/presentation/pages/SettingsRoute.dart';
+import 'features/Splash/BasicSplashRoute.dart';
+import 'features/cart/presentation/pages/CartRoute.dart';
+import 'features/users/presentation/pages/ConfirmPasseord.dart';
+import 'features/users/presentation/pages/LoginRoute.dart';
+import 'features/users/presentation/pages/ResstorePassword.dart';
 
 void main() {
  return runApp(
