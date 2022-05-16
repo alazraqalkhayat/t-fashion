@@ -36,7 +36,6 @@ GlobalKey <ScaffoldState> kSettingsRouteScaffoldKey=GlobalKey <ScaffoldState>();
 
 //Colors
 
-const Color kDarkOrange=Color(0xFFF67662);
 const Color kTextFormFiledBorderColor=Color(0xFFC5C5C5);
 const Color kTextFormFiledHintColor=Color(0xFF727272);
 const Color kEndDrawerTitleColor=Color(0xFF8A8A8A);

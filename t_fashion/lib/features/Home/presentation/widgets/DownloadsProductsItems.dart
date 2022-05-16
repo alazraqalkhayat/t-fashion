@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/texts/OverFlowText.dart';
 import 'package:t_fashion/core/widgets/texts/SubTitleText.dart';
@@ -99,7 +100,7 @@ class DownloadsProductsItems extends StatelessWidget {
                             child: Row(
                               textDirection: TextDirection.rtl,
                             children: [
-                              Text(price,style: TextStyle(color: kDarkOrange),textAlign: TextAlign.justify,textDirection: TextDirection.rtl,),
+                              Text(price,style: TextStyle(color: AppTheme.primaryColor),textAlign: TextAlign.justify,textDirection: TextDirection.rtl,),
                             ],
                            ),
                           )

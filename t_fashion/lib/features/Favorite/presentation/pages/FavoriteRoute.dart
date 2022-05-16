@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/FavoriteAndOffersProductsItems.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicIconButtons.dart';
@@ -51,7 +52,7 @@ class _FavoriteRouteState extends State<FavoriteRoute> {
           ),
           leftSideIconButton: BasicIconButtons(
             icon: Icons.filter_list_alt,
-            iconColor: kDarkOrange,
+            iconColor: AppTheme.primaryColor,
             iconSize: 30,
             onPressed: () {
               setState(() {
@@ -72,8 +73,8 @@ class _FavoriteRouteState extends State<FavoriteRoute> {
                       child: Container(
                         height: 50.0,
                         child: TabBar(
-                          labelColor: kDarkOrange,
-                          indicatorColor: kDarkOrange,
+                          labelColor: AppTheme.primaryColor,
+                          indicatorColor: AppTheme.primaryColor,
                           unselectedLabelColor: Colors.black,
                           isScrollable: true,
                           tabs: List<Widget>.generate(categories.length,

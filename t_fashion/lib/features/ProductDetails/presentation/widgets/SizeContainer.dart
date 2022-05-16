@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/texts/SubTitleText.dart';
 
@@ -19,7 +20,7 @@ class SizeContainer extends StatelessWidget {
           decoration: BoxDecoration(
             color: backgroundColor,
             border: Border.all(
-              color: kDarkOrange,
+              color: AppTheme.primaryColor,
               width: 1,
             ),
             borderRadius: BorderRadius.all(

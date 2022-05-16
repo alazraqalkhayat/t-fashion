@@ -4,6 +4,7 @@ import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicButtonsContainer.dart';
 
 import 'widgets/SplashesWidget.dart';
+import 'package:t_fashion/core/app_theme.dart';
 
 class ThirdSplash extends StatelessWidget {
 
@@ -19,7 +20,7 @@ class ThirdSplash extends StatelessWidget {
         children: [
           BasicButtonsContainer(
               title: "إبدأ التسوق",
-              backgroundColor: kDarkOrange,
+              backgroundColor: AppTheme.primaryColor,
               textColor: Colors.white,
               onTap: () {
                 Navigator.pushReplacementNamed(context, kHomeRoute);
@@ -29,7 +30,7 @@ class ThirdSplash extends StatelessWidget {
           BasicButtonsContainer(
               title: "تسجيل الدخول",
               backgroundColor: Colors.white,
-              textColor: kDarkOrange,
+              textColor: AppTheme.primaryColor,
               onTap: () {
                 Navigator.pushReplacementNamed(context, kLoginRoute);
                 saveDate();

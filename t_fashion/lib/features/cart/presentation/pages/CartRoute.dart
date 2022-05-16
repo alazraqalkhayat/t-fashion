@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicButtonsContainer.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicIconButtons.dart';
@@ -42,7 +43,7 @@ class _CartRouteState extends State<CartRoute> {
           ),
           leftSideIconButton: BasicIconButtons(
             icon: Icons.filter_list_alt,
-            iconColor: kDarkOrange,
+            iconColor: AppTheme.primaryColor,
             iconSize: 30,
             onPressed: (){
               setState(() {
@@ -98,7 +99,7 @@ class _CartRouteState extends State<CartRoute> {
                         flex: 1,
                         child: BasicButtonsContainer(
                           title: "عرض الفاتوره",
-                          backgroundColor: kDarkOrange,
+                          backgroundColor: AppTheme.primaryColor,
                           textColor: Colors.white,
                           onTap: (){
                             Navigator.pushNamed(context, kInvoiceRoute);
@@ -111,7 +112,7 @@ class _CartRouteState extends State<CartRoute> {
                         child: BasicButtonsContainer(
                           title: "خدمه التوصيل",
                           backgroundColor: Colors.white,
-                          textColor: kDarkOrange,
+                          textColor: AppTheme.primaryColor,
                           onTap: (){
                             Navigator.pushNamed(context, kSavedLocationRoute);
                           },

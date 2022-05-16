@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/texts/SubTitleText.dart';
 
@@ -84,7 +85,7 @@ class CartItems extends StatelessWidget {
                         flex: 1,
                         child: SubTitleText(
                           subTitle: price,
-                          color: kDarkOrange,
+                          color: AppTheme.primaryColor,
                           fontSize: 15,
                         )),
                     Expanded(
@@ -105,7 +106,7 @@ class CartItems extends StatelessWidget {
                               flex: 1,
                               child: SubTitleText(
                                 subTitle: count.toString(),
-                                color: kDarkOrange,
+                                color: AppTheme.primaryColor,
                                 fontSize: 15,
                               )),
                           Expanded(

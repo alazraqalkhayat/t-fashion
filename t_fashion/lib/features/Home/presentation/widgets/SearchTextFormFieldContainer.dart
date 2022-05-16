@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 
 class SearchTextFormFieldContainer extends StatelessWidget {
@@ -28,7 +29,7 @@ class SearchTextFormFieldContainer extends StatelessWidget {
       ),
       child: TextFormField(
         style:TextStyle(
-          color: kDarkOrange,
+          color: AppTheme.primaryColor,
           fontFamily: kElMessiriFontFamily
         ) ,
 

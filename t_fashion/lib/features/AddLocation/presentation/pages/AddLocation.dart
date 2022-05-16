@@ -3,8 +3,7 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:provider/provider.dart';
-import 'package:t_fashion/core/others/Constants.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/widgets/TextFormFieldContainer.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicButtonsContainer.dart';
 import 'package:t_fashion/core/widgets/texts/SubTitleText.dart';
@@ -36,7 +35,7 @@ class _AddLocationState extends State<AddLocation> {
             Container(
               height: mediaHeight / 6,
               width: double.infinity,
-              color: kDarkOrange,
+              color: AppTheme.primaryColor,
               child: Center(
                 child: SubTitleText(
                   subTitle: "إضافه عنوان",
@@ -132,7 +131,7 @@ class _AddLocationState extends State<AddLocation> {
                               ),
 
                               BasicButtonsContainer(
-                                backgroundColor: kDarkOrange,
+                                backgroundColor: AppTheme.primaryColor,
                                 textColor: Colors.white,
                                 title: "إضافه",
                                 onTap: (){

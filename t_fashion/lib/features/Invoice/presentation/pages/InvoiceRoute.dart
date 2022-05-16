@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicButtonsContainer.dart';
 import 'package:t_fashion/core/widgets/texts/OverFlowText.dart';
@@ -19,7 +20,7 @@ class InvoiceRoute extends StatelessWidget{
               Container(
                 height: mediaHeight / 6,
                 width: double.infinity,
-                color: kDarkOrange,
+                color: AppTheme.primaryColor,
                 child: Center(
                   child: SubTitleText(
                     subTitle: "T-FASHION",
@@ -87,7 +88,7 @@ class InvoiceRoute extends StatelessWidget{
                           margin: EdgeInsets.only(top: 10),
                           height: 3,
                           width: double.infinity,
-                          color: kDarkOrange,
+                          color: AppTheme.primaryColor,
                         ),
                         SizedBox(
                           height: mediaHeight / 2,
@@ -109,7 +110,7 @@ class InvoiceRoute extends StatelessWidget{
                                     child: SubTitleText(
                                       subTitle: "50\$",
                                       fontSize: 12,
-                                      color: kDarkOrange,
+                                      color: AppTheme.primaryColor,
                                     ),
                                   ),
                                   Expanded(
@@ -123,7 +124,7 @@ class InvoiceRoute extends StatelessWidget{
                                     child: SubTitleText(
                                       subTitle: "50\$",
                                       fontSize: 12,
-                                      color: kDarkOrange,
+                                      color: AppTheme.primaryColor,
                                     ),
                                   ),
                                 ],
@@ -136,7 +137,7 @@ class InvoiceRoute extends StatelessWidget{
                           margin: EdgeInsets.only(top: 10, bottom: 10),
                           height: 3,
                           width: mediaWidth,
-                          color: kDarkOrange,
+                          color: AppTheme.primaryColor,
                         ),
                         SingleChildScrollView(
                           child: Container(
@@ -161,7 +162,7 @@ class InvoiceRoute extends StatelessWidget{
                                   rightSideText: "سعر التوصيل",
                                   rightSideColor: kMyGrey,
                                   leftSideText: "20\$",
-                                  leftSideColor: kDarkOrange,
+                                  leftSideColor: AppTheme.primaryColor,
                                 ),
                                 SizedBox(
                                   height: 10,
@@ -170,11 +171,11 @@ class InvoiceRoute extends StatelessWidget{
                                   rightSideText: "المجموع",
                                   rightSideColor: kMyGrey,
                                   leftSideText: "20\$",
-                                  leftSideColor: kDarkOrange,
+                                  leftSideColor: AppTheme.primaryColor,
                                 ),
                                 BasicButtonsContainer(
                                   title: "إنهاء",
-                                  backgroundColor: kDarkOrange,
+                                  backgroundColor: AppTheme.primaryColor,
                                   textColor: Colors.white,
                                   onTap: () {
 

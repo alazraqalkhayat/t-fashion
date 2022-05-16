@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:t_fashion/core/app_theme.dart';
 
 import '../others/Constants.dart';
 
 class TextFormFieldContainer extends StatelessWidget {
   var onChange = (newValue) {};
-  var validator=(validatorValue){return '';};
+  var validator = (String ? newValue) {
+    return newValue;
+  };
   late String hint,icon_name;
   late bool autofocus ;
   TextInputType textInputType;
@@ -18,7 +21,7 @@ class TextFormFieldContainer extends StatelessWidget {
 
 
 
-  TextFormFieldContainer({required this.hint,required this.icon_name,required this.textInputType,required this.onChange,required this.validator,required this.autofocus,required this.obscureText,required this.maxLength,required this.enable});
+  TextFormFieldContainer({required this.hint,required this.icon_name,this.textInputType=TextInputType.text,required this.onChange,required this.validator,this.autofocus=false,this.obscureText=false,required this.maxLength,this.enable=true});
 
   late String _orientation;
   @override
@@ -31,7 +34,7 @@ class TextFormFieldContainer extends StatelessWidget {
       child: TextFormField(
         enabled: enable,
 
-        style: TextStyle(color: kDarkOrange),
+        style: TextStyle(color: AppTheme.primaryColor),
         keyboardType:textInputType,
         validator: validator,
         textDirection: TextDirection.rtl,
@@ -44,12 +47,12 @@ class TextFormFieldContainer extends StatelessWidget {
           border: OutlineInputBorder(
               gapPadding: 0,
               borderRadius: BorderRadius.circular(50),
-              borderSide:  BorderSide(color: kDarkOrange,style: BorderStyle.solid,width: 1 )
+              borderSide:  BorderSide(color: AppTheme.primaryColor,style: BorderStyle.solid,width: 1 )
           ),
           focusedBorder: OutlineInputBorder(
             gapPadding: 0,
             borderRadius: BorderRadius.circular(50),
-              borderSide:  BorderSide(color: kDarkOrange,style: BorderStyle.solid,width: 1 )
+              borderSide:  BorderSide(color: AppTheme.primaryColor,style: BorderStyle.solid,width: 1 )
           ),
           contentPadding: _orientation=="landSpace"?EdgeInsets.only(top:-4):EdgeInsets.only(top: -10),
           suffixIcon: SvgPicture.asset("${kIconsPath}$icon_name",fit: BoxFit.scaleDown,),

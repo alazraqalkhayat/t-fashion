@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:provider/provider.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicButtonsContainer.dart';
 import 'package:t_fashion/core/widgets/texts/SubTitleText.dart';
@@ -18,7 +18,7 @@ class _ProductDetailsState extends State<ProductDetails> {
   late double mediaHeight, mediaWidth;
   late Color favIconColor = kMyGrey,
       sizeBackgroundColor = Colors.transparent,
-      sizeTextColor = kDarkOrange;
+      sizeTextColor = AppTheme.primaryColor;
 
   List<String> size = [
     'M',
@@ -120,7 +120,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           SubTitleText(
                             subTitle: "\$50",
                             fontSize: 20,
-                            color: kDarkOrange,
+                            color: AppTheme.primaryColor,
                           ),
                         ],
                       ),
@@ -203,7 +203,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       ),
                       Container(
                         height: 2,
-                        color: kDarkOrange,
+                        color: AppTheme.primaryColor,
                       ),
 
                       //start taps layout
@@ -227,8 +227,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                                     TabBar(
                                         labelStyle: TextStyle(
                                             fontFamily: kElMessiriFontFamily),
-                                        labelColor: kDarkOrange,
-                                        indicatorColor: kDarkOrange,
+                                        labelColor: AppTheme.primaryColor,
+                                        indicatorColor: AppTheme.primaryColor,
                                         unselectedLabelColor: kMyGrey,
                                         isScrollable: true,
                                         tabs: [
@@ -265,7 +265,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                 flex: 2,
                                 child: BasicButtonsContainer(
                                   title: "إضافه الى السله",
-                                  backgroundColor: kDarkOrange,
+                                  backgroundColor: AppTheme.primaryColor,
                                   textColor: Colors.white,
                                   onTap: () {},
                                 ),
@@ -294,7 +294,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                                         child: SubTitleText(
                                           subTitle: '1'
                                               .toString(),
-                                          color: kDarkOrange,
+                                          color: AppTheme.primaryColor,
                                           fontSize: 15,
                                         ),
                                       ),

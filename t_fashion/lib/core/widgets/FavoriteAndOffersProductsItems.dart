@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 
 import 'texts/OverFlowText.dart';
@@ -85,7 +86,7 @@ class FavoriteAndOffersProductsItems extends StatelessWidget {
                             flex: 1,
                             child: Text(
                               price,
-                              style: TextStyle(color: kDarkOrange),
+                              style: TextStyle(color: AppTheme.primaryColor),
                             ),
                           ),
                         ],

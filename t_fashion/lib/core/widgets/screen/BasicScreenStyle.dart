@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:t_fashion/core/others/Constants.dart';
+import 'package:t_fashion/core/app_theme.dart';
 
 class BasicScreenStyle extends StatefulWidget {
   late Widget child, rightSideIconButton, leftSideIconButton,middleWidget;
@@ -45,7 +46,7 @@ class _BasicScreenStyleState extends State<BasicScreenStyle> {
                 Expanded(
                   flex: 1,
                   child: Container(
-                    color: kDarkOrange,
+                    color: AppTheme.primaryColor,
                   ),
                 )
               ],
@@ -58,7 +59,7 @@ class _BasicScreenStyleState extends State<BasicScreenStyle> {
                   flex: 1,
                   child: Container(
                       decoration: BoxDecoration(
-                        color: kDarkOrange,
+                        color: AppTheme.primaryColor,
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(70),
                         ),

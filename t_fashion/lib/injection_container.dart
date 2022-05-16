@@ -3,6 +3,10 @@ import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:t_fashion/features/users/data/repository/ForgetPasswordRepository.dart';
+import 'package:t_fashion/features/users/data/repository/registerRepository.dart';
+import 'package:t_fashion/features/users/presentation/manager/forgetPassword/forgetPasswordBloc.dart';
+import 'package:t_fashion/features/users/presentation/manager/register/registerBloc.dart';
 
 import 'dataProviders/local_data_provider.dart';
 import 'dataProviders/network/Network_info.dart';
@@ -15,7 +19,8 @@ Future<void> init() async {
   print('start injection');
 
 //  ! Features
-//   _initRegisterFeature();
+  _initRegisterFeature();
+  _initForgetPasswordFeature();
 
   //! Core
   sl.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(sl()));
@@ -33,24 +38,37 @@ Future<void> init() async {
 
 }
 
-/*
+
+
 void _initRegisterFeature() {
 //bloc
-  sl.registerFactory(() => RegistrationBloc(repository: sl()));
+  sl.registerFactory(() => RegisterBloc(repository: sl()));
   print('register 1');
 
   //repository
-  sl.registerLazySingleton<RegistrationRepository>(
-    () => RegistrationRepository(
+  sl.registerLazySingleton<RegisterRepository>(
+    () => RegisterRepository(
       remoteDataProvider: sl(),
       localDataProvider: sl(),
       networkInfo: sl(),
     ),
   );
-  print('register 3');
 
 }
-*/
+void _initForgetPasswordFeature() {
+  sl.registerFactory(() => ForgetPasswordBloc(repository: sl()));
+  print('register 1');
+
+  //repository
+  sl.registerLazySingleton<ForgetPasswordRepository>(
+        () => ForgetPasswordRepository(
+      remoteDataProvider: sl(),
+      localDataProvider: sl(),
+      networkInfo: sl(),
+    ),
+  );
+
+}
 
 
 

@@ -10,8 +10,8 @@ class DataSourceURL {
     // static String baseUrl = 'https://temmam.com/testing/RestuarantsSystem/api/';
 
      static String login='login';
-     static String checkExistUser='checkExistUser';
-     static String createNewUser='createNewUser';
+
+     static String signup='register/sighup';
 
 
     // static String mainMenuOffers = 'mainMenuOffers.php';

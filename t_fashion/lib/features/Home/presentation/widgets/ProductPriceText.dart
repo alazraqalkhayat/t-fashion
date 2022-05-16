@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 
 class ProductPriceText extends StatelessWidget {
@@ -14,7 +15,7 @@ class ProductPriceText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text(newPrice,style: TextStyle(color: kDarkOrange),),
+        Text(newPrice,style: TextStyle(color: AppTheme.primaryColor),),
         SizedBox(
           width: 20,
         ),
@@ -22,7 +23,7 @@ class ProductPriceText extends StatelessWidget {
           oldPrice,
           style: TextStyle(
 
-              color: kDarkOrange,
+              color: AppTheme.primaryColor,
               decoration: TextDecoration.lineThrough,
               decorationStyle: TextDecorationStyle.solid
           ),

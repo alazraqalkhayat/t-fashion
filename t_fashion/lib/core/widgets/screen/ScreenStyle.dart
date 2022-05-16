@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/texts/SubTitleText.dart';
 
@@ -29,7 +30,7 @@ class ScreenStyle extends StatelessWidget {
                 Expanded(
                   flex: 1,
                   child: Container(
-                    color: kDarkOrange,
+                    color: AppTheme.primaryColor,
                   ),
                 )
               ],
@@ -42,7 +43,7 @@ class ScreenStyle extends StatelessWidget {
                   flex: 1,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: kDarkOrange,
+                      color: AppTheme.primaryColor,
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(70),
                       ),

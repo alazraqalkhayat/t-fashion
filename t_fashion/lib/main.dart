@@ -1,8 +1,6 @@
 // @dart=2.9
 
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:t_fashion/features/users/presentation/pages/SingupRoute.dart';
 import 'core/others/Constants.dart';
 import 'features/AddLocation/presentation/pages/AddLocation.dart';
 import 'features/Favorite/presentation/pages/FavoriteRoute.dart';
@@ -14,28 +12,24 @@ import 'features/SavedLocations/presentation/pages/SavedLocationRoute.dart';
 import 'features/Settings/presentation/pages/SettingsRoute.dart';
 import 'features/Splash/BasicSplashRoute.dart';
 import 'features/cart/presentation/pages/CartRoute.dart';
-import 'features/users/presentation/pages/ConfirmPasseord.dart';
-import 'features/users/presentation/pages/LoginRoute.dart';
-import 'features/users/presentation/pages/ResstorePassword.dart';
+import 'features/users/presentation/pages/forgetPassword/ConfirmPasseord.dart';
+import 'features/users/presentation/pages/forgetPassword/ResstorePassword.dart';
+import 'features/users/presentation/pages/register/LoginRoute.dart';
+import 'features/users/presentation/pages/register/SingupRoute.dart';
+import 'package:t_fashion/injection_container.dart' as dl;
 
-void main() {
- return runApp(
-   DevicePreview(builder: (context){
-     return MyApp();
-   })
-
- );
+void main() async{
+  await dl.init();
+ runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Hawkah',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicButtonsContainer.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicIconButtons.dart';
@@ -38,7 +39,7 @@ class _SavedLocationRouteState extends State<SavedLocationRoute> {
           ),
           leftSideIconButton: BasicIconButtons(
             icon: Icons.arrow_back_ios,
-            iconColor: kDarkOrange,
+            iconColor: AppTheme.primaryColor,
             iconSize: 30,
             onPressed: () {
             },
@@ -79,7 +80,7 @@ class _SavedLocationRouteState extends State<SavedLocationRoute> {
                 flex: 1,
                 child: BasicButtonsContainer(
                   title: "إضاقه عنوان",
-                  backgroundColor: kDarkOrange,
+                  backgroundColor: AppTheme.primaryColor,
                   textColor: Colors.white,
                   onTap: (){
                     Navigator.pushNamed(context, kAddLocationRoute);
@@ -105,4 +106,4 @@ class _SavedLocationRouteState extends State<SavedLocationRoute> {
   }
 }
 
-//              BasicButtonsContainer(title: "إضافه عنوان", backgroundColor: kDarkOrange, textColor: Colors.white, onTap: (){},),
+//              BasicButtonsContainer(title: "إضافه عنوان", backgroundColor: AppTheme.primaryColor, textColor: Colors.white, onTap: (){},),

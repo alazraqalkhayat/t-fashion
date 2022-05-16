@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:provider/provider.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/EndOfListContainer.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicIconButtons.dart';
@@ -65,7 +65,7 @@ class HomeRoute extends StatelessWidget{
                   ),
                   leftSideIconButton: BasicIconButtons(
                     icon: Icons.filter_list_alt,
-                    iconColor: kDarkOrange,
+                    iconColor: AppTheme.primaryColor,
                     iconSize: 30,
                     onPressed: () {
                       print("filter pressed");
@@ -206,7 +206,7 @@ class HomeRoute extends StatelessWidget{
             ),
             FloatingActionButton(
               child: SvgPicture.asset('${kIconsPath}shopping_cart.svg'),
-              backgroundColor: kDarkOrange,
+              backgroundColor: AppTheme.primaryColor,
               onPressed: () {
                 Navigator.pushNamed(context, kCartRoute);
               },

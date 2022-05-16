@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const Color primaryColor = Color(0xFF149F82);
-  static MaterialColor primarySwatch = MaterialColor(Color(0xFF149F82).value, {
-    50 : const Color(0xFF149F82).withOpacity(.05),
-    100: const Color(0xFF149F82).withOpacity(.1),
-    200: const Color(0xFF149F82).withOpacity(.2),
-    300: const Color(0xFF149F82).withOpacity(.3),
-    400: const Color(0xFF149F82).withOpacity(.4),
-    500: const Color(0xFF149F82).withOpacity(.5),
-    600: const Color(0xFF149F82).withOpacity(.6),
-    700: const Color(0xFF149F82).withOpacity(.7),
-    800: const Color(0xFF149F82).withOpacity(.8),
-    900: const Color(0xFF149F82).withOpacity(.9)
+  static const Color primaryColor = Color(0xFFF67662);
+  static MaterialColor primarySwatch = MaterialColor(Color(0xFFF67662).value, {
+    50 : const Color(0xFFF67662).withOpacity(.05),
+    100: const Color(0xFFF67662).withOpacity(.1),
+    200: const Color(0xFFF67662).withOpacity(.2),
+    300: const Color(0xFFF67662).withOpacity(.3),
+    400: const Color(0xFFF67662).withOpacity(.4),
+    500: const Color(0xFFF67662).withOpacity(.5),
+    600: const Color(0xFFF67662).withOpacity(.6),
+    700: const Color(0xFFF67662).withOpacity(.7),
+    800: const Color(0xFFF67662).withOpacity(.8),
+    900: const Color(0xFFF67662).withOpacity(.9)
   });
 
   static Color scaffoldBackgroundColor = Color(0xfff0e5f5);

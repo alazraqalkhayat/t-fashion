@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:t_fashion/core/app_theme.dart';
 import 'package:t_fashion/core/others/Constants.dart';
 import 'package:t_fashion/core/widgets/buttons/BasicButtonsContainer.dart';
 import 'package:t_fashion/core/widgets/drawer/EndDrawerListTile.dart';
@@ -46,7 +47,7 @@ class _EndDrawerWidgetState extends State<EndDrawerWidget> {
               Expanded(
                 flex: 1,
                 child: Container(
-                  color: kDarkOrange,
+                  color: AppTheme.primaryColor,
                 ),
               )
             ],
@@ -59,7 +60,7 @@ class _EndDrawerWidgetState extends State<EndDrawerWidget> {
                     : navigationDrawerHeaderFlex = 4,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: kDarkOrange,
+                    color: AppTheme.primaryColor,
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(70),
                     ),
@@ -201,7 +202,7 @@ class _EndDrawerWidgetState extends State<EndDrawerWidget> {
                                     SubTitleText(
                                       subTitle: "عن التطبيق",
                                       fontSize: 25,
-                                      color: kDarkOrange,
+                                      color: AppTheme.primaryColor,
                                     ),
                                     SubTitleText(
                                       subTitle:
@@ -211,7 +212,7 @@ class _EndDrawerWidgetState extends State<EndDrawerWidget> {
                                     ),
                                     BasicButtonsContainer(
                                       title: "شكراً",
-                                      backgroundColor: kDarkOrange,
+                                      backgroundColor: AppTheme.primaryColor,
                                       textColor: Colors.white,
                                       onTap: () {
                                         ScaffoldMessenger.of(context)
@@ -255,7 +256,7 @@ class _EndDrawerWidgetState extends State<EndDrawerWidget> {
                                     SubTitleText(
                                       subTitle: "قيم التطبيق",
                                       fontSize: 25,
-                                      color: kDarkOrange,
+                                      color: AppTheme.primaryColor,
                                     ),
                                     RatingBar.builder(
                                       initialRating: 5,
@@ -274,7 +275,7 @@ class _EndDrawerWidgetState extends State<EndDrawerWidget> {
                                     ),
                                     BasicButtonsContainer(
                                       title: "تقييم",
-                                      backgroundColor: kDarkOrange,
+                                      backgroundColor: AppTheme.primaryColor,
                                       textColor: Colors.white,
                                       onTap: () {
                                         openPlayStore();
